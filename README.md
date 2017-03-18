@@ -1,6 +1,8 @@
 # GodotHeyzap
 [Heyzap](https://www.heyzap.com/) Module for [Godot Game Engine](https://godotengine.org/) (Android only by while)
 
+![Screenshot](/images/screenshot.png)
+
 
 Compiling
 -------------
