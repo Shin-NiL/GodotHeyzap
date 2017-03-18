@@ -1,0 +1,171 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://scene_root.gd" type="Script" id=1]
+
+[node name="scene_root" type="Node"]
+
+script/script = ExtResource( 1 )
+
+[node name="button" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 140.0
+margin/right = 527.0
+margin/bottom = 192.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "TEST ACTIVITY"
+flat = false
+
+[node name="button1" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 230.0
+margin/right = 527.0
+margin/bottom = 284.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "LOAD BANNER"
+flat = false
+
+[node name="button2" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 320.0
+margin/right = 527.0
+margin/bottom = 373.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "SHOW BANNER"
+flat = false
+
+[node name="button3" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 400.0
+margin/right = 527.0
+margin/bottom = 449.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "HIDE BANNER"
+flat = false
+
+[node name="button4" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 480.0
+margin/right = 527.0
+margin/bottom = 529.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "DISPLAY INTERSTITIAL"
+flat = false
+
+[node name="button7" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 560.0
+margin/right = 527.0
+margin/bottom = 609.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "FETCH VIDEO AD"
+flat = false
+
+[node name="button8" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 720.0
+margin/right = 527.0
+margin/bottom = 769.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "FETCH INCENTIVIZED AD"
+flat = false
+
+[node name="button5" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 640.0
+margin/right = 527.0
+margin/bottom = 689.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "DISPLAY VIDEO AD"
+flat = false
+
+[node name="button6" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 800.0
+margin/right = 527.0
+margin/bottom = 849.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "DISPLAY  INCENTIVIZED VIDEO AD"
+flat = false
+
+[connection signal="pressed" from="button" to="." method="_on_button_pressed"]
+
+[connection signal="pressed" from="button1" to="." method="_on_button1_pressed"]
+
+[connection signal="pressed" from="button2" to="." method="_on_button2_pressed"]
+
+[connection signal="pressed" from="button3" to="." method="_on_button3_pressed"]
+
+[connection signal="pressed" from="button4" to="." method="_on_button4_pressed"]
+
+[connection signal="pressed" from="button7" to="." method="_on_button7_pressed"]
+
+[connection signal="pressed" from="button8" to="." method="_on_button8_pressed"]
+
+[connection signal="pressed" from="button5" to="." method="_on_button5_pressed"]
+
+[connection signal="pressed" from="button6" to="." method="_on_button6_pressed"]
+
+

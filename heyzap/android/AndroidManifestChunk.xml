@@ -1,0 +1,75 @@
+
+<!-- AdColony -->
+<activity android:name="com.jirbo.adcolony.AdColonyOverlay"
+android:configChanges="keyboardHidden|orientation|screenSize"
+android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+<activity android:name="com.jirbo.adcolony.AdColonyFullscreen"
+android:configChanges="keyboardHidden|orientation|screenSize"
+android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+<activity android:name="com.jirbo.adcolony.AdColonyBrowser"
+android:configChanges="keyboardHidden|orientation|screenSize"
+android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+ 
+<!-- Google Play Services -->
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+ 
+<!-- AdMob -->
+<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+ 
+<!-- AppLovin -->
+<activity android:name="com.applovin.adview.AppLovinInterstitialActivity" android:configChanges="orientation|screenSize" />
+<activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+ 
+<!-- Chartboost -->
+<activity android:name="com.chartboost.sdk.CBImpressionActivity"
+  android:excludeFromRecents="true"
+  android:hardwareAccelerated="true"
+  android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+  android:configChanges="keyboardHidden|orientation|screenSize" />
+ 
+<!-- Facebook Audience Network -->
+<activity android:name="com.facebook.ads.InterstitialAdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+ 
+<!-- HyprMX -->
+<activity android:name="com.hyprmx.android.sdk.activity.HyprMXOfferViewerActivity" android:configChanges="orientation|screenSize|keyboardHidden|keyboard|smallestScreenSize|uiMode|fontScale|screenLayout|locale" android:label="HyprMX SDK" android:launchMode="singleTop" />
+<activity android:name="com.hyprmx.android.sdk.activity.HyprMXRequiredInformationActivity" android:configChanges="keyboardHidden|screenSize" />
+<activity android:name="com.hyprmx.android.sdk.activity.HyprMXNoOffersActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+<activity android:name="com.hyprmx.android.sdk.activity.HyprMXWebTrafficActivity" android:configChanges="orientation|screenSize|keyboardHidden" />
+<activity android:name="com.hyprmx.android.sdk.activity.HyprMXVideoPlayerActivity" android:configChanges="orientation|keyboardHidden|screenSize" />
+ 
+<!-- InMobi -->
+<activity android:name="com.inmobi.rendering.InMobiAdActivity" android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:hardwareAccelerated="true" />
+<receiver android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver" android:enabled="true" android:exported="true" >
+  <intent-filter>
+    <action android:name="com.inmobi.share.id" />
+  </intent-filter>
+</receiver>
+<service android:name="com.inmobi.signals.activityrecognition.ActivityRecognitionManager" android:enabled="true" />
+ 
+<!-- Leadbolt -->
+<activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.apptracker.android.module.AppModuleActivity" android:hardwareAccelerated="false"/>
+ 
+<!-- UnityAds -->
+<activity android:name="com.unity3d.ads.adunit.AdUnitActivity"  android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen" android:hardwareAccelerated="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+<activity android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"  android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen" android:hardwareAccelerated="false" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+ 
+<!-- Vungle -->
+<activity android:name="com.vungle.publisher.FullScreenAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+<activity android:name="com.vungle.publisher.VideoFullScreenAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+<activity android:name="com.vungle.publisher.MraidFullScreenAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+ 
+<!-- Heyzap Ad Network -->
+<activity android:name="com.heyzap.sdk.ads.HeyzapInterstitialActivity" android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" />
+<activity android:name="com.heyzap.sdk.ads.HeyzapVideoActivity" android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" />
+<activity android:name="com.heyzap.sdk.ads.HeyzapProxyActivity" />
+<activity android:name="com.heyzap.sdk.ads.VASTActivity" android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" />
+<activity android:name="com.heyzap.sdk.ads.MediationTestActivity" />
+<receiver android:name="com.heyzap.sdk.ads.PackageAddedReceiver">
+  <intent-filter>
+    <data android:scheme="package"/>
+    <action android:name="android.intent.action.PACKAGE_ADDED"/>
+  </intent-filter>
+</receiver>
+     
+
+
