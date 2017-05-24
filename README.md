@@ -73,3 +73,4 @@ Callback Functions:
 
 
 Please don't forget to check the demo project to see how the things works on the GDScript side.
+You can find a quick tutorial [here](https://shinnil.blogspot.com.br/2017/03/tutorial-using-heyzap-godot-module.html).
