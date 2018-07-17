@@ -9,30 +9,8 @@
 Compiling
 -------------
 
-1. Copy the 'heyzap' folder from the root of this repository and its contents and put inside of the modules folder inside of godot source code
-2. on your godot source code, edit the file 'godot/platform/android/build.gradle.template', search the code snippet
-
-        allprojects {
-            repositories {
-                mavenCentral()
-                $$GRADLE_REPOSITORY_URLS$$
-
-            }
-        }
-
-    and chage it to:
-
-        allprojects {
-            repositories {
-                mavenCentral()
-                $$GRADLE_REPOSITORY_URLS$$
-                flatDir {
-                    dirs "../../../modules/heyzap/android/libs"
-                }
-            }
-        }
-        
-3. [compile the godot source for android](http://docs.godotengine.org/en/stable/reference/compiling_for_android.html);
+1. Copy the 'heyzap' folder from the root of this repository and its contents and put it inside of the modules folder inside of godot source code directory       
+2. [compile the godot source for android](http://docs.godotengine.org/en/stable/reference/compiling_for_android.html);
 
 Avaliable Functions:
 ---------------------
@@ -73,6 +51,15 @@ Callback Functions:
     _on_incentivized_complete()
     _on_incentivized_incomplete()
 
-
+Sample Code
+-----------
 Please don't forget to check the demo project to see how the things works on the GDScript side.
 You can find a quick tutorial [here](https://shinnil.blogspot.com.br/2017/03/tutorial-using-heyzap-godot-module.html).
+
+
+Known Issues
+------------
+Due to some technical difficulties the following networks wasn't linked in this module:
+- Adcolony;
+- Tapjoy;
+- Vungle.
