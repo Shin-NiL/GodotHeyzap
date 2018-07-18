@@ -18,6 +18,8 @@ Avaliable Functions:
         - integer instanceId => use get_instance_ID()
         - String publisher_id => your Heyzap publisher id
     startTestActivity()
+    setGdprConsent(isGdprConsentGiven)
+        - Boolean isGdprConsentGiven => It is true if you have the user's consent. If you do not have the user's consent, it is false
     loadBanner(onTop)
         - Boolean onTop => if it's true, load the banner on top of screen, else load on the bottom
     showBanner()
@@ -48,6 +50,7 @@ Callback Functions:
     _on_incentivized_hide()
     _on_incentivized_available()
     _on_incentivized_failed_to_fetch()
+    _on_incentivized_show()
     _on_incentivized_complete()
     _on_incentivized_incomplete()
 

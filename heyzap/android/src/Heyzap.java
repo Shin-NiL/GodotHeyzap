@@ -151,6 +151,10 @@ public class Heyzap extends Godot.SingletonBase {
         HeyzapAds.startTestActivity(activity);
     }
 
+    public void setGdprConsent(boolean isGdprConsentGiven) {
+        HeyzapAds.setGdprConsent(isGdprConsentGiven, activity);
+    }
+
     @Override
     protected void onMainPause() {
         if (initialized) {
@@ -302,6 +306,7 @@ public class Heyzap extends Godot.SingletonBase {
             @Override
             public void onShow(String tag) {
                 // Ad is now showing
+                GodotLib.calldeferred(instanceId, "_on_incentivized_show", new Object[]{});
             }
         
             @Override
